@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./image/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <div class="App">
+      <h3 class="header">Just Do It.</h3>
+      <div class="input-content">
+        <input class="input-task" required placeholder="add a task." maxlength="40" />
+        <button class="button buton-task-add">I Got This!</button>
+      </div>
+      <div class="time-now"></div>
+      <ul class="task-list"></ul>
+    </div>
+    <template id="task-templete">
+        <li class="task-item">
+          <span class="task-item-text"></span>
+          <div class="buttonList">
+            <button class="button button-completed">
+              <img src="./image/complete.png" />
+            </button>
+            <button class="button button-delete">
+              <img src="./image/delete.png" />
+            </button>
+          </div>
+        </li>
+      </template>
+    <script src="./index.js"></script>
+
+  </body>
+</html>
